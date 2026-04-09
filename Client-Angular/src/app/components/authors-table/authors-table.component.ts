@@ -60,7 +60,7 @@ export class AuthorsTableComponent {
    * Esto permite que en la tabla cada producto tenga un badge visual que indique su categoría
    * de forma clara para el usuario.
    */
-categoryMap: Record<ZodiacSign, BadgeType> = {
+zodiacSignMap: Record<ZodiacSign, BadgeType> = {
     'Aries': 'danger',       // Rojo/Fuego
     'Tauro': 'success',      // Verde/Tierra
     'Geminis': 'primary',    // Azul oscuro/Aire

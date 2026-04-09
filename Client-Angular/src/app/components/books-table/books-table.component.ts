@@ -41,7 +41,7 @@ export class BooksTableComponent {
    * - 'Fantasia' → 'primary' (azul)
    * - 'Ciencia Ficcion' → 'warning' (amarillo)
    * - 'Drama' → 'danger' (rojo)
-   * - 'Misterio' → 'success' (verde)
+   * - 'Misterio' → 'secondary' (gris)
    * - 'Romance' → 'info' (azul claro)
    *
    * Esto permite que en la tabla cada producto tenga un badge visual que indique su categoría
@@ -51,7 +51,7 @@ export class BooksTableComponent {
     'Fantasia': 'primary',
     'Ciencia Ficcion': 'warning',
     'Drama': 'danger',
-    'Misterio': 'success',
+    'Misterio': 'secondary',
     'Romance': 'info',
   };
 

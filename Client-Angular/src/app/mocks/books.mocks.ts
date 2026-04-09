@@ -1,5 +1,18 @@
 import { Book } from "../interfaces/books.interface";
 
+/**
+ * Mock data for books.
+ *
+ * @remarks
+ * This array contains sample book data used for testing and development purposes.
+ * Each book object includes id, title, author, genre, and publisher.
+ *
+ * @example
+ * ```ts
+ * import { BOOKS_MOCK } from './mocks/books.mocks';
+ * console.log(BOOKS_MOCK[0].title); // 'Cien años de soledad'
+ * ```
+ */
 export const BOOKS_MOCK: Book[] = [
     {
         id: 1,

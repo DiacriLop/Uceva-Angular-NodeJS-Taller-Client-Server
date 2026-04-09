@@ -29,7 +29,7 @@ id: number;
 fullName: string;
 
   /** Género del autor */
-gender: AuthorGender;
+gender: String;
 
   /** Biografía corta */
 bio: string;
@@ -41,10 +41,7 @@ birthdate: Date;
 zodiacSign: ZodiacSign;
 }
 
-/**
- * Tipo de género del autor.
- */
-export type AuthorGender = 'Male' | 'Female';
+
 
 /**
  * Tipo de signo zodiacal.

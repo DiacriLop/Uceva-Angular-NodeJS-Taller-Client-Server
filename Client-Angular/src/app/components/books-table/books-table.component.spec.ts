@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { By } from '@angular/platform-browser';
+import { BOOKS_MOCK } from '../../mocks/books.mocks';
 import { BooksTableComponent } from './books-table.component';
 
 describe('BooksTableComponent', () => {
@@ -17,7 +18,46 @@ describe('BooksTableComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+it('debería crear el componente', () => {
     expect(component).toBeTruthy();
   });
+
+  it('debería renderizar una tabla', () => {
+    const table = fixture.debugElement.query(By.css('table'));
+    expect(table).toBeTruthy();
+  });
+
+  it('debería renderizar una fila por cada libro', () => {
+    component.books = BOOKS_MOCK;
+    fixture.detectChanges();
+
+    const rows = fixture.debugElement.queryAll(By.css('tbody tr'));
+    expect(rows.length).toBe(component.books.length);
+  });
+
+  it('debería mostrar los datos del libro en cada columna', () => {
+    component.books = BOOKS_MOCK;
+    fixture.detectChanges();
+
+    const rows = fixture.debugElement.queryAll(By.css('tbody tr'));
+
+    rows.forEach((row, index) => {
+      const columns = row.queryAll(By.css('th, td'));
+      const book = component.books[index];
+
+      expect(columns[0].nativeElement.textContent.trim()).toBe(String(book.id));
+      expect(columns[1].nativeElement.textContent.trim()).toBe(book.title);
+      expect(columns[2].nativeElement.textContent.trim()).toBe(book.author);
+      expect(columns[3].nativeElement.textContent.trim()).toBe(book.publisher);
+    });
+  });
+
+  it('debería mapear cada género a su BadgeType correcto', () => {
+    expect(component.genreMap['Fantasia']).toBe('primary');
+    expect(component.genreMap['Ciencia Ficcion']).toBe('warning');
+    expect(component.genreMap['Drama']).toBe('danger');
+    expect(component.genreMap['Misterio']).toBe('secondary');
+    expect(component.genreMap['Romance']).toBe('info');
+  });
 });
+

@@ -1,5 +1,18 @@
 import { Product } from "../interfaces/products.interface";
 
+/**
+ * Mock data for products.
+ *
+ * @remarks
+ * This array contains sample product data used for testing and development purposes.
+ * Each product object includes id, name, category, and price.
+ *
+ * @example
+ * ```ts
+ * import { PRODUCTS_MOCK } from './mocks/products.mocks';
+ * console.log(PRODUCTS_MOCK[0].name); // 'Leche entera'
+ * ```
+ */
 export const PRODUCTS_MOCK: Product[] = [
     {
         id: 1,

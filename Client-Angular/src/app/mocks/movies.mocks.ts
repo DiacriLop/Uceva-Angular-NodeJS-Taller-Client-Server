@@ -1,5 +1,18 @@
 import { Movie } from "../interfaces/movies.interface";
 
+/**
+ * Mock data for movies.
+ *
+ * @remarks
+ * This array contains sample movie data used for testing and development purposes.
+ * Each movie object includes id, title, director, genre, and year.
+ *
+ * @example
+ * ```ts
+ * import { MOVIES_MOCK } from './mocks/movies.mocks';
+ * console.log(MOVIES_MOCK[0].title); // 'La lista de Schindler'
+ * ```
+ */
 export const MOVIES_MOCK: Movie[] = [
     {
         id: 1,
