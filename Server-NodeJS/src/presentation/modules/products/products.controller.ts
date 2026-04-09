@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { HandleError } from "../../../domain/erros/handle.error";
+import { HandleError } from "../../../domain/errors/handle.error";
 import { ProductsService } from "./products.service";
 
 /**

@@ -1,5 +1,5 @@
 import { faker } from '@faker-js/faker';
-import { Product, ProductCategory } from '../../../domain/interfaces/product.interface';
+import { Product, ProductCategory } from '../../../domain/interfaces/product.interface.js';
 
 /**
  * Servicio encargado de la generación y gestión de productos.

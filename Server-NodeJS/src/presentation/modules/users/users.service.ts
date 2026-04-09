@@ -1,4 +1,4 @@
-import { UserEngineering, User } from "../../../domain/interfaces/user.interface";
+import { UserEngineering, User } from "../../../domain/interfaces/user.interface.js";
 import { faker } from '@faker-js/faker';
 
 /**

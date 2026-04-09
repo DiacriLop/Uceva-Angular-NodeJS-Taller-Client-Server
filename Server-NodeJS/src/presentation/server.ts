@@ -1,7 +1,7 @@
 import cors from "cors";
-import express, { Router } from "express";
+import express, { Router, Request, Response } from "express";
 import path from "path";
-import swaggerUi from 'swagger-ui-express';
+import * as swaggerUi from 'swagger-ui-express';
 import { swaggerSpec } from '../config/swagger';
 import { Options } from "../domain/interfaces/server.interface";
 
@@ -70,7 +70,7 @@ export class Server {
     this.app.use("/api/docs", swaggerUi.serve, swaggerUi.setup(swaggerSpec));
 
     //* SPA
-    this.app.use((req, res) => {
+    this.app.use((req: Request, res: Response) => {
       res.sendFile(
         path.join(__dirname, `../../${this.publicPath}/index.html`)
       );
