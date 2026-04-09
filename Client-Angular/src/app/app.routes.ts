@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { UsersPage } from './pages/users/users.page';
 import { ProductsPage } from './pages/products/products.page';
 import { Bookspage } from './pages/books/books.page';
+import { MoviesPage } from './pages/movies/movies.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -18,6 +19,7 @@ import { Bookspage } from './pages/books/books.page';
  * @see {@link UsersPage}
  * @see {@link ProductsPage}
  * @see {@link Bookspage}
+ * @see {@link MoviesPage}
  */
 export const routes: Routes = [
 
@@ -47,6 +49,15 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de libros.
    */
   { path: 'books', component:  Bookspage },
+
+/**
+   * Ruta de peliculas.
+   *
+   * @remarks
+   * Renderiza el componente `MoviesPage`, encargado
+   * de mostrar y gestionar el listado de peliculas.
+   */
+  { path: 'movies', component:  MoviesPage },
 
 
   /**

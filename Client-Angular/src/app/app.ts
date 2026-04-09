@@ -46,6 +46,7 @@ export class App {
    *     { text: 'Usuarios', url: '/users' },
    *     { text: 'Productos', url: '/products' },
    *     { text: 'Libros', url: '/books' }
+   *     { text: 'Peliculas', url: '/movies' }
    *   ]
    * }
    * ```
@@ -60,6 +61,7 @@ export class App {
       { text: 'Usuarios', url: '/users' },
       { text: 'Productos', url: '/products' },
       { text: 'Libros', url: '/books' },
+      { text: 'Peliculas', url: '/movies' }
     ]
   };
 }
