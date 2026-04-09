@@ -9,7 +9,7 @@ export const AUTHORS_MOCK: Author[] = [
     birthdate: new Date('1927-03-06'),
     zodiacSign: 'Piscis',
 },
-  {
+{
     id: 2,
     fullName: 'Jane Austen',
     gender: 'Female',

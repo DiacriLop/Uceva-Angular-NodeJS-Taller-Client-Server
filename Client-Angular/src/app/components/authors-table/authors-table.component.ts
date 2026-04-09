@@ -39,14 +39,23 @@ export class AuthorsTableComponent {
    */
   @Input() authors: Author[] = [];
   /**
-   * Mapeo de categorías de productos a tipos de Badge.
-   * @type {Record<ProductCategory, BadgeType>}
+   * Mapeo de signos zodiacales a tipos de Badge.
+   * @type {Record<ZodiacSign, BadgeType>}
    * @remarks
-   * Se utiliza para asignar colores de badges a cada categoría:
-   * - 'Carnes' → 'danger' (rojo)
-   * - 'Frutas' → 'warning' (amarillo)
-   * - 'Lacteos' → 'primary' (azul)
-   * - 'Verduras' → 'success' (verde)
+   * Se utiliza para asignar colores de badges a cada signo zodiacal:
+   * - 'Aries' → 'danger' (rojo)
+   * - 'Tauro' → 'success' (verde)
+   * - 'Geminis' → 'primary' (azul)
+   * - 'Cancer' → 'light' (blanco)
+   * - 'Leo' → 'warning' (amarillo)
+   * - 'Virgo' → 'secondary' (gris)
+   * - 'Libra' → 'info' (celeste)
+   * - 'Escorpio' → 'dark' (negro)
+   * - 'Sagitario' → 'danger' (rojo)
+   * - 'Capricornio' → 'secondary' (gris)
+   * - 'Acuario' → 'info' (celeste)
+   * - 'Piscis' → 'success' (verde)
+
    *
    * Esto permite que en la tabla cada producto tenga un badge visual que indique su categoría
    * de forma clara para el usuario.
