@@ -43,10 +43,11 @@ export class App {
    *     size: 2
    *   },
    *   navLinks: [
-   *     { text: 'Usuarios', url: '/users' },
-   *     { text: 'Productos', url: '/products' },
-   *     { text: 'Libros', url: '/books' }
-   *     { text: 'Peliculas', url: '/movies' }
+   *  { text: 'Usuarios', url: '/users' },
+      { text: 'Productos', url: '/products' },
+      { text: 'Libros', url: '/books' },
+      { text: 'Peliculas', url: '/movies' },
+      { text: 'Autores', url: '/authors' }
    *   ]
    * }
    * ```
@@ -61,7 +62,8 @@ export class App {
       { text: 'Usuarios', url: '/users' },
       { text: 'Productos', url: '/products' },
       { text: 'Libros', url: '/books' },
-      { text: 'Peliculas', url: '/movies' }
+      { text: 'Peliculas', url: '/movies' },
+      { text: 'Autores', url: '/authors' }
     ]
   };
 }

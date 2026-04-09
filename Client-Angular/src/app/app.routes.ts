@@ -3,6 +3,7 @@ import { UsersPage } from './pages/users/users.page';
 import { ProductsPage } from './pages/products/products.page';
 import { Bookspage } from './pages/books/books.page';
 import { MoviesPage } from './pages/movies/movies.page';
+import { AuthorsPage } from './pages/authors/authors.page';
 
 /**
  * Definición de las rutas principales de la aplicación.
@@ -58,6 +59,15 @@ export const routes: Routes = [
    * de mostrar y gestionar el listado de peliculas.
    */
   { path: 'movies', component:  MoviesPage },
+
+/**
+   * Ruta de autores.
+   *
+   * @remarks
+   * Renderiza el componente `AuthorsPage`, encargado
+   * de mostrar y gestionar el listado de autores.
+   */
+  { path: 'authors', component:  AuthorsPage },
 
 
   /**
